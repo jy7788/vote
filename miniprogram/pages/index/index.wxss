@@ -28,7 +28,7 @@ page{
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .justify-userinfobtn {
@@ -36,6 +36,8 @@ page{
   height: 160rpx;
   padding-top: 20rpx;
   border-color: transparent !important;
+  position:absolute;
+  bottom:120rpx;
 }
 
 .margin {
