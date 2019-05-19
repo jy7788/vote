@@ -9,7 +9,7 @@ Page({
     radio: '',
     userInfo: {},
     show: false,
-    buttonDisable: false
+    buttonDisable: true
   },
   onClose() {
     this.setData({ show: false });
@@ -73,6 +73,7 @@ Page({
             success: res => {
               console.log("用户信息:" + JSON.stringify(res.userInfo))
               this.setData({
+                buttonDisable: false,
                 userInfo: res.userInfo
               })
             }
@@ -93,7 +94,7 @@ Page({
                         icon: 'success',
                         duration: 1000
                       })
-                      // this.setData({ buttonDisable: true });
+                      this.setData({ buttonDisable: false });
                     } else {
                       wx.showToast({
                         title: '授权失败',

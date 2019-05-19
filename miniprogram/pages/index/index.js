@@ -22,7 +22,7 @@ Page({
   onGotUserInfo(detail){
     this.join()
   },
-  join(event){
+  join(){
     const db = wx.cloud.database()
     db.collection('voteStatus').doc('vote-identify').get({
       success(res) {

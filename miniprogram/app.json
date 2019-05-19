@@ -43,9 +43,6 @@
   "permission": {
     "scope.userInfo": {
       "desc": "小程序将用到你的用户信息用于展示"
-    },
-    "scope.userLocation": {
-      "desc": "小程序将用到你的地址信息用于展示"
     }
   }
 }
