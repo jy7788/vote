@@ -1,0 +1,12 @@
+<view class="home">
+<van-nav-bar
+  title="投票失败!"
+/>
+<van-panel use-footer-slot>
+  <view class="align">
+  请重新投票!
+  </view>
+  <view slot="footer" class="justify">
+  </view>
+</van-panel>
+</view>

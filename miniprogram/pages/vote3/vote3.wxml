@@ -1,0 +1,23 @@
+<view class="home">
+<van-nav-bar
+  title="谁是凶手?"
+/>
+<van-panel use-footer-slot>
+  <view class="align">
+  <van-checkbox-group value="{{ result }}" bind:change="onChange">
+  <van-checkbox
+    wx:for="{{ list }}"
+    wx:key="index"
+    name="{{ item }}"
+  >
+  <view class="margin">
+    {{ item }}
+  </view>
+  </van-checkbox>
+</van-checkbox-group>
+  </view>
+  <view slot="footer" class="justify">
+  <van-button type="primary" bind:click="vote">投票</van-button>
+  </view>
+</van-panel>
+</view>

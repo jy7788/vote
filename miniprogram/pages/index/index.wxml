@@ -1,0 +1,14 @@
+<view class="home">
+<van-nav-bar
+  title="夜皇后之谜"
+/>
+
+  <view slot="footer" class="justify">
+  <van-icon name="video-o" info="加入" size="60px" bind:click="join"/>
+  </view>
+<view class="align">
+
+</view>
+<van-popup show="{{ show }}" bind:close="onClose">游戏还未开始。。。</van-popup>
+<van-toast id="van-toast" />
+</view>

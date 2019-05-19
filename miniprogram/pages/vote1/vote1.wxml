@@ -1,0 +1,19 @@
+<view class="home">
+<van-nav-bar
+  title="由谁服用戏精胶囊?"
+/>
+<van-panel use-footer-slot>
+  <view class="align">
+  <van-radio-group value="{{ radio }}" bind:change="onChange">
+  <van-radio name="queen_manager" >商场经理</van-radio>
+  <van-radio name="queen_cleaner" >保洁员</van-radio>
+  <van-radio name="queen_guide" >导购员</van-radio>
+  <van-radio name="queen_doctor" >私人医生</van-radio>
+  </van-radio-group>
+  </view>
+  <view slot="footer" class="justify">
+  <van-button type="primary" bind:click="vote" disabled="{{ buttonDisable}}">投票</van-button>
+  </view>
+</van-panel>
+<van-toast id="van-toast" />
+</view>

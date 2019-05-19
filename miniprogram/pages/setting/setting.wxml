@@ -1,0 +1,19 @@
+<view class="home">
+<van-nav-bar
+  title="授权设置"
+/>
+
+  <view slot="footer" class="justify">
+      <button 
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})"
+    ></button>
+  </view>
+<view class="align">
+
+</view>
+<van-popup show="{{ show }}" bind:close="onClose">游戏还未开始。。。</van-popup>
+<van-toast id="van-toast" />
+</view>

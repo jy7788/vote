@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/vote3/vote3",
+    "pages/vote2/vote2",
+    "pages/vote1/vote1",
+    "pages/rank/rank",
+    "pages/voteSucc/voteSucc",
+    "pages/voteFail/voteFail",
+    "pages/voted/voted",
+    "pages/setting/setting"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "戏精侦探团",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/common/1.png",
+        "selectedIconPath": "images/common/1-1.png",
+        "text": "投票"
+      },
+      {
+        "pagePath": "pages/rank/rank",
+        "iconPath": "images/common/3.png",
+        "selectedIconPath": "images/common/3-3.png",
+        "text": "排行"
+      },
+            {
+              "pagePath": "pages/setting/setting",
+              "iconPath": "images/common/3.png",
+              "selectedIconPath": "images/common/3-3.png",
+              "text": "设置"
+            }
+    ]
+  },
+  "permission": {
+       "scope.userInfo": {
+         "desc": "小程序将用到你的用户信息用于展示"
+    }
+  }
+}

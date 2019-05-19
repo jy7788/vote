@@ -1,0 +1,12 @@
+<view class="home">
+<van-nav-bar
+  title="投票成功!"
+/>
+<van-panel use-footer-slot>
+  <view class="align">
+  可在排行中查看投票结果!
+  </view>
+  <view slot="footer" class="justify">
+  </view>
+</van-panel>
+</view>

@@ -1,0 +1,17 @@
+{
+  "usingComponents": {
+    "van-checkbox": "../../dist/checkbox/index",
+    "van-checkbox-group": "../../dist/checkbox-group/index",
+    "van-row": "../../dist/row/index",
+    "van-col": "../../dist/col/index",
+    "van-nav-bar": "../../dist/nav-bar/index",
+    "van-panel": "../../dist/panel/index",
+    "van-button": "../../dist/button/index",
+    "van-radio": "../../dist/radio/index",
+    "van-radio-group": "../../dist/radio-group/index",
+    "van-progress": "../../dist/progress/index",
+    "van-tab": "../../dist/tab/index",
+    "van-tabs": "../../dist/tabs/index",
+    "van-icon": "../../dist/icon/index"
+  }
+}

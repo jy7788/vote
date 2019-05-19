@@ -1,0 +1,18 @@
+<view class="home">
+<van-nav-bar
+  title="夜皇后有几个成员?"
+/>
+<van-panel use-footer-slot>
+  <view class="align">
+  <van-radio-group value="{{ radio }}" bind:change="onChange">
+  <van-radio name="2" >两个</van-radio>
+  <van-radio name="3" >三个</van-radio>
+  <van-radio name="4" >四个</van-radio>
+  <van-radio name="5" >五个</van-radio>
+  </van-radio-group>
+  </view>
+  <view slot="footer" class="justify">
+  <van-button type="primary" bind:click="vote">投票</van-button>
+  </view>
+</van-panel>
+</view>
