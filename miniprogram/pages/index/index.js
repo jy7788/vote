@@ -19,6 +19,9 @@ Page({
       })
     }
   },
+  onGotUserInfo(detail){
+    this.join()
+  },
   join(event){
     const db = wx.cloud.database()
     db.collection('voteStatus').doc('vote-identify').get({

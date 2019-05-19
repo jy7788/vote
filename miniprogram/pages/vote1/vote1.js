@@ -93,6 +93,7 @@ Page({
                         icon: 'success',
                         duration: 1000
                       })
+                      // this.setData({ buttonDisable: true });
                     } else {
                       wx.showToast({
                         title: '授权失败',
@@ -105,13 +106,11 @@ Page({
               }
               if (tip.cancel) {
                 console.log("run fail", tip)
-                vm.locationText = '全国'
+                // vm.locationText = '全国'
               }
             }
           })
         }
-          //Toast('请先去设置页授权!');
-          this.setData({ buttonDisable: true });
         }
     })
   },

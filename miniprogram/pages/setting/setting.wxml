@@ -4,7 +4,7 @@
 />
 
   <view slot="footer" class="justify">
-      <button 
+    <button 
       open-type="getUserInfo" 
       bindgetuserinfo="onGetUserInfo"
       class="userinfo-avatar"

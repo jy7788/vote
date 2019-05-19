@@ -2,10 +2,17 @@
 <van-nav-bar
   title="夜皇后之谜"
 />
-
   <view slot="footer" class="justify">
-  <van-icon name="video-o" info="加入" size="60px" bind:click="join"/>
+    <button 
+      open-type="getUserInfo" 
+      class="justify-userinfobtn"
+      bindgetuserinfo="onGotUserInfo"
+      plain
+    >
+    <van-icon name="video-o" info="加入" size='60px'/>
+    </button>
   </view>
+  
 <view class="align">
 
 </view>

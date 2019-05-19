@@ -12,7 +12,7 @@
   </van-radio-group>
   </view>
   <view slot="footer" class="justify">
-  <van-button type="primary" bind:click="vote" disabled="{{ buttonDisable}}">投票</van-button>
+  <van-button type="primary" bind:click="vote" disabled="{{ buttonDisable }}">投票</van-button>
   </view>
 </van-panel>
 <van-toast id="van-toast" />
