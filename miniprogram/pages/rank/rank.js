@@ -62,10 +62,10 @@ Page({
       }
       if (voteCount > 0) {
         this.setData({
-          queen_manager: queen_manager_num / voteCount * 100,
-          queen_guide: queen_guider_num / voteCount * 100,
-          queen_doctor: queen_doctor_num / voteCount * 100,
-          queen_cleaner: queen_cleaner_num / voteCount * 100
+          queen_manager: parseInt(queen_manager_num / voteCount * 100),
+          queen_guide: parseInt(queen_guider_num / voteCount * 100),
+          queen_doctor: parseInt(queen_doctor_num / voteCount * 100),
+          queen_cleaner: parseInt(queen_cleaner_num / voteCount * 100)
         });
       }
       console.log("胶囊排名:" + this.data.queen_cleaner)
