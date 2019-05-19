@@ -1,19 +1,24 @@
 <view class="home">
-<van-nav-bar
-  title="由谁服用戏精胶囊?"
-/>
-<van-panel use-footer-slot>
+  <view class="vote1-title">由谁服用戏精胶囊?</view>
+  <view class="vote1-radio">
+    <van-radio-group value="{{ radio }}" class="radio-color" bind:change="onChange">
+      <van-radio label-class="radio-color" name="queen_manager" >商场经理</van-radio>
+      <van-radio label-class="radio-color" name="queen_cleaner" >保洁员</van-radio>
+      <van-radio label-class="radio-color" name="queen_guide" >导购员</van-radio>
+      <van-radio label-class="radio-color" name="queen_doctor" >私人医生</van-radio>
+    </van-radio-group>
+  </view>
+
+  <view class="vote1-btn">
+    <van-button class="btn" size="large" type="primary" bind:click="vote" disabled="{{ buttonDisable }}">投票</van-button>
+  </view>
+
+<!-- <van-panel use-footer-slot>
   <view class="align">
-  <van-radio-group value="{{ radio }}" bind:change="onChange">
-  <van-radio name="queen_manager" >商场经理</van-radio>
-  <van-radio name="queen_cleaner" >保洁员</van-radio>
-  <van-radio name="queen_guide" >导购员</van-radio>
-  <van-radio name="queen_doctor" >私人医生</van-radio>
-  </van-radio-group>
+    
   </view>
   <view slot="footer" class="justify">
-  <van-button type="primary" bind:click="vote" disabled="{{ buttonDisable }}">投票</van-button>
   </view>
-</van-panel>
+</van-panel> -->
 <van-toast id="van-toast" />
 </view>

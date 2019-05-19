@@ -1,33 +1,68 @@
 <view class="home">
-<van-tabs active="{{ active }}" bind:change="onChange">
-  <van-tab title="服用胶囊排名">
-  <van-nav-bar
-  title="服用胶囊排名"
-  />
-<van-panel use-footer-slot>
-  <view class="align">
-  商场经理:<van-progress percentage="{{ queen_manager }}" />
-  </view>
-  <view class="align">
-  导购:<van-progress percentage="{{ queen_guide }}" />
-  </view>
-  <view class="align">
-  医生:<van-progress percentage="{{ queen_doctor }}" />
-  </view>
-  <view class="align">
-  保洁员:<van-progress percentage="{{ queen_cleaner }}" />
-  </view>
-</van-panel>
-  </van-tab>
-  <van-tab title="投票排名">
-  <view class="align" wx:for="{{ rankArr }}" >
-    第{{index + 1}}
-    <van-icon size="40px"
-    name="{{item.wxUserInfo.avatarUrl}}" info="{{item.wxUserInfo.nickName}}"/>
-    答对{{item.successCount}}题
-  </view>
-  </van-tab>
-</van-tabs>
-
-
+  <van-tabs active="{{ active }}" bind:change="onChange">
+    <van-tab title="服用胶囊排名">
+      <van-nav-bar title="服用胶囊排名" />
+      <view class="list">
+        <view class="align">
+          <view class="item">商场经理:</view>
+          <view class="item-progress">
+            <van-progress percentage="{{ queen_manager }}" />
+          </view>
+        </view>
+        <view class="align">
+          <view class="item">导购:</view>
+          <view class="item-progress">
+            <van-progress percentage="{{ queen_guide }}" />
+          </view>          
+        </view>
+        <view class="align">
+          <view class="item">医生:</view>
+          <view class="item-progress">
+            <van-progress percentage="{{ queen_doctor }}" />
+          </view> 
+        </view>
+        <view class="align">
+          <view class="item">保洁员:</view>
+          <view class="item-progress">
+            <van-progress  percentage="{{ queen_cleaner }}" />
+          </view>         
+        </view>
+      </view>
+      <!-- <van-panel use-footer-slot>
+        <view class="align">
+          <view class="item">商场经理:</view>
+          <view>
+            <van-progress percentage="{{ queen_manager }}" />
+          </view>
+        </view>
+        <view class="align">
+          <view class="item">导购:</view>
+          <view>
+            <van-progress percentage="{{ queen_guide }}" />
+          </view>          
+        </view>
+        <view class="align">
+          <view class="item">医生:</view>
+          <view>
+            <van-progress percentage="{{ queen_doctor }}" />
+          </view> 
+        </view>
+        <view class="align">
+          <view class="item">保洁员:</view>
+          <view>
+            <van-progress percentage="{{ queen_cleaner }}" />
+          </view>         
+        </view>
+      </van-panel> -->
+    </van-tab>
+    <van-tab title="投票排名">
+      <view class="align" wx:for="{{ rankArr }}">
+        <view class="tp-list">
+          第{{index + 1}}
+          <van-icon size="40px" name="{{item.wxUserInfo.avatarUrl}}" info="{{item.wxUserInfo.nickName}}" />
+          答对{{item.successCount}}题
+        </view>
+      </view>
+    </van-tab>
+  </van-tabs>
 </view>

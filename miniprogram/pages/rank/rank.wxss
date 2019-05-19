@@ -1,21 +1,43 @@
 @import "../../dist/common/index.wxss";
+page {
+  height: 100%;
+}
+.home {
+  height: 100%;
+}
+.list{
+  padding: 20rpx;
+}
 .align {
-  margin-top:20px;
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  height:120rpx;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 .justify {
-  margin-top:20px;
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.margin{
-  margin-top:10px;
+.margin {
+  margin-top: 10px;
+}
+
+.item{
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.item-progress{
+  height: 60rpx;
+}
+
+.tp-list{
+  padding: 20rpx;
 }

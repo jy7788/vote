@@ -1,34 +1,50 @@
 @import "../../dist/common/index.wxss";
-.align {
-  margin-top:20px;
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
+page{
+  height:100%;
 }
-
-.justify {
-  margin-top:20px;
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: center;
-}
-
-.justify-userinfobtn{
+.home {
   width: 100%;
-  height: 80px;
-  line-height: 80px;
-  padding-top: 10px;
-  border-color:#fff !important;
+  height: 100%;
+  background: url("https://6465-detective-vote-jnpey-1259098315.tcb.qcloud.la/back1.jpg?sign=8fd61d8f1a8a85266b489aaf5b83516f&t=1558251992")
+    no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.header {
+  height: 60rpx;
+  font-size: 40rpx;
+  text-align: center;
+  color: #fff;
+}
+.align {
+  margin-top: 40rpx;
+  height: 40rpx;
+  width: 100%;
 }
 
-.margin{
-  margin-top:10px;
+.justify-index {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.userinfo, .uploader, .tunnel {
+.justify-userinfobtn {
+  width: 100%;
+  height: 160rpx;
+  padding-top: 20rpx;
+  border-color: transparent !important;
+}
+
+.margin {
+  margin-top: 10px;
+}
+
+.userinfo,
+.uploader,
+.tunnel {
   margin-top: 40rpx;
   height: 140rpx;
   width: 100%;
@@ -66,7 +82,8 @@ justify-content: center;
   border: none;
 }
 
-.uploader, .tunnel {
+.uploader,
+.tunnel {
   height: auto;
   padding: 0 0 0 40rpx;
   flex-direction: column;
@@ -74,7 +91,8 @@ justify-content: center;
   box-sizing: border-box;
 }
 
-.uploader-text, .tunnel-text {
+.uploader-text,
+.tunnel-text {
   width: 100%;
   line-height: 52px;
   font-size: 34rpx;

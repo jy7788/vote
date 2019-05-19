@@ -1,5 +1,11 @@
 <view class="home">
-<van-nav-bar
+  <view class="vote-result">
+    已投过票!
+  </view>
+  <view class="vote-info">
+    可在排行中查看投票结果!
+  </view>
+<!-- <van-nav-bar
   title="已投过票!"
 />
 <van-panel use-footer-slot>
@@ -8,5 +14,5 @@
   </view>
   <view slot="footer" class="justify">
   </view>
-</van-panel>
+</van-panel> -->
 </view>

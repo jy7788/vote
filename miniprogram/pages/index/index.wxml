@@ -1,8 +1,9 @@
 <view class="home">
-<van-nav-bar
-  title="夜皇后之谜"
-/>
-  <view slot="footer" class="justify">
+  <van-nav-bar
+    title="夜皇后之谜"
+  />
+  <!-- <view class="header">夜皇后之谜</view> -->
+  <view slot="footer" class="justify-index">
     <button 
       open-type="getUserInfo" 
       class="justify-userinfobtn"
@@ -13,9 +14,7 @@
     </button>
   </view>
   
-<view class="align">
-
-</view>
+<!-- <view class="align"></view> -->
 <van-popup show="{{ show }}" bind:close="onClose">游戏还未开始。。。</van-popup>
 <van-toast id="van-toast" />
 </view>
