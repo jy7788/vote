@@ -31,18 +31,7 @@
         "iconPath": "images/common/3.png",
         "selectedIconPath": "images/common/3-3.png",
         "text": "排行"
-      },
-      {
-        "pagePath": "pages/setting/setting",
-        "iconPath": "images/common/3.png",
-        "selectedIconPath": "images/common/3-3.png",
-        "text": "设置"
       }
     ]
-  },
-  "permission": {
-    "scope.userInfo": {
-      "desc": "小程序将用到你的用户信息用于展示"
-    }
   }
 }

@@ -56,7 +56,8 @@ exports.main = async (event, context) => {
     //记录用户投票记录
     var id = wxContext.OPENID;
     var success = 0;
-    if (type == 'vote2' && result[0] == '5') {
+    if (type == 'vote2' && result[0] == '4') {
+      console.log('vote2投票:' + result[0])
       success = 1;
     } else if (type == 'vote3' && result[0] == '保洁员') {
       success = 1;
@@ -76,9 +77,16 @@ exports.main = async (event, context) => {
       var resData = res.data
       if (resData.length == 0) {
         console.log('未投票过')
+        if (type == 'vote1') {
+          voteUserInfo.timeCost = 0
+        }
       }else{
-        voteUserInfo.timeCost = resData[0].timeCost + voteUserInfo.timeCost
-        voteUserInfo.successCount = resData[0].successCount+voteUserInfo.successCount
+        if (type =='vote1'){
+          voteUserInfo.timeCost = resData[0].timeCost
+        }else{
+          voteUserInfo.timeCost = resData[0].timeCost + voteUserInfo.timeCost
+        }
+        voteUserInfo.successCount = resData[0].successCount + voteUserInfo.successCount
       }
     }).catch(res => {
       console.log('查询失败')

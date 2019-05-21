@@ -10,7 +10,7 @@
       bindgetuserinfo="onGotUserInfo"
       plain
     >
-    <van-icon color="#fff" name="video-o" info="加入" size='60px'/>
+    <van-icon color="#fff" name="video-o" info="加入" size='65px'/>
     </button>
   </view>
   

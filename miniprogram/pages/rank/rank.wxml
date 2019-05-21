@@ -1,28 +1,27 @@
 <view class="home">
   <van-tabs active="{{ active }}" bind:change="onChange">
     <van-tab title="服用胶囊排名">
-      <van-nav-bar title="服用胶囊排名" />
       <view class="list">
         <view class="align">
-          <view class="item">商场经理:</view>
+          <view class="item">商场经理(罗薇薇):</view>
           <view class="item-progress">
             <van-progress percentage="{{ queen_manager }}" />
           </view>
         </view>
         <view class="align">
-          <view class="item">导购:</view>
+          <view class="item">导购(石美楠):</view>
           <view class="item-progress">
             <van-progress percentage="{{ queen_guide }}" />
           </view>          
         </view>
         <view class="align">
-          <view class="item">医生:</view>
+          <view class="item">医生(林云):</view>
           <view class="item-progress">
             <van-progress percentage="{{ queen_doctor }}" />
           </view> 
         </view>
         <view class="align">
-          <view class="item">保洁员:</view>
+          <view class="item">保洁员(张五一):</view>
           <view class="item-progress">
             <van-progress  percentage="{{ queen_cleaner }}" />
           </view>         

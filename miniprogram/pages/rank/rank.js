@@ -76,7 +76,7 @@ Page({
 
     //获取投票排名
     db.collection('voteUser').limit(10).orderBy(
-      'successCount', 'asc'
+      'successCount', 'desc'
     ).orderBy(
       'timeCost', 'asc'
     ).get().then(res => {

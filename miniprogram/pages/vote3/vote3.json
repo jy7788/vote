@@ -6,6 +6,8 @@
     "van-col": "../../dist/col/index",
     "van-nav-bar": "../../dist/nav-bar/index",
     "van-panel": "../../dist/panel/index",
-    "van-button": "../../dist/button/index"
+    "van-button": "../../dist/button/index",
+    "van-radio": "../../dist/radio/index",
+    "van-radio-group": "../../dist/radio-group/index"
   }
 }

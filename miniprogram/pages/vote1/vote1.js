@@ -8,11 +8,7 @@ Page({
     list: ['商场经理', '导购', '保洁员', '私人医生'],
     radio: '',
     userInfo: {},
-    show: false,
     buttonDisable: true
-  },
-  onClose() {
-    this.setData({ show: false });
   },
   onChange(event) {
     console.log(event)

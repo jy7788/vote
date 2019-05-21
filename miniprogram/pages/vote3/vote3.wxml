@@ -1,23 +1,17 @@
 <view class="home">
-<van-nav-bar
-  title="谁是凶手?"
-/>
-<van-panel use-footer-slot>
-  <view class="align">
-  <van-checkbox-group value="{{ result }}" bind:change="onChange">
-  <van-checkbox
-    wx:for="{{ list }}"
-    wx:key="index"
-    name="{{ item }}"
-  >
-  <view class="margin">
-    {{ item }}
+
+  <view class="vote1-title">谁是卧底?</view>
+  <view class="vote1-radio">
+    <van-radio-group value="{{ radio }}" class="radio-color" bind:change="onChange">
+  <van-radio label-class="radio-color" name="商场经理" >商场经理(罗薇薇)</van-radio>
+  <van-radio label-class="radio-color" name="导购" >导购(石美楠)</van-radio>
+  <van-radio label-class="radio-color" name="保洁员" >保洁员(张五一)</van-radio>
+  <van-radio label-class="radio-color" name="保镖" >保镖(小坤坤)</van-radio>
+  <van-radio label-class="radio-color" name="私人医生" >私人医生(林云)</van-radio>
+    </van-radio-group>
   </view>
-  </van-checkbox>
-</van-checkbox-group>
+
+  <view class="vote1-btn">
+    <van-button class="btn" size="large" type="primary" bind:click="vote" disabled="{{ buttonDisable }}">投票</van-button>
   </view>
-  <view slot="footer" class="justify">
-  <van-button type="primary" bind:click="vote">投票</van-button>
-  </view>
-</van-panel>
 </view>

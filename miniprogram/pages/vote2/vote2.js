@@ -7,7 +7,8 @@ Page({
   data: {
     list: ['商场经理', '导购', '保洁员', '私人医生'],
     radio: '',
-    userInfo:{}
+    userInfo:{},
+    buttonDisable: true
   },
   onChange(event) {
     console.log(event)
@@ -61,14 +62,49 @@ Page({
     // 获取用户信息
     wx.getSetting({
       success: res => {
+        var a = false
         if (res.authSetting['scope.userInfo']) {
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
           wx.getUserInfo({
             success: res => {
               console.log("用户信息:" + JSON.stringify(res.userInfo))
               this.setData({
+                buttonDisable: false,
                 userInfo: res.userInfo
               })
+            }
+          })
+        } else {
+          console.log("用户未授权")
+          // 用户未授权时引导授权
+          wx.showModal({
+            title: '是否授权用户信息',
+            content: '需要获取您的用户信息，请确认授权，否则无法使用投票',
+            success: function (tip) {
+              if (tip.confirm) {
+                wx.openSetting({
+                  success: function (data) {
+                    if (data.authSetting["scope.userInfo"] === true) {
+                      wx.showToast({
+                        title: '授权成功',
+                        icon: 'success',
+                        duration: 1000
+                      })
+                      this.setData({ buttonDisable: false });
+                    } else {
+                      wx.showToast({
+                        title: '授权失败',
+                        icon: 'success',
+                        duration: 1000
+                      })
+                    }
+                  }
+                })
+              }
+              if (tip.cancel) {
+                console.log("run fail", tip)
+                // vm.locationText = '全国'
+              }
             }
           })
         }
